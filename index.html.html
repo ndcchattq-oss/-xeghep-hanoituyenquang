@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071b3d">
+<title>Xe ghép Hà Nội – Tuyên Quang</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#eef4f8;color:#182338;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+a{text-decoration:none}.wrap{max-width:900px;margin:auto;padding:0 12px 35px}
+.header{position:sticky;top:0;z-index:20;background:#071b3d;color:#fff;box-shadow:0 2px 12px #0002}
+.nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 10px}
+.logo{font-size:18px;font-weight:900;line-height:1.15}.nav-actions{display:flex;gap:7px}
+.nav-btn{display:flex;align-items:center;justify-content:center;padding:10px 13px;border-radius:22px;background:#fff;color:#071b3d;font-weight:800}
+.hero{margin-top:12px;border-radius:0 0 28px 28px;padding:30px 16px 25px;text-align:center;color:#fff;background:linear-gradient(150deg,#0a3b86,#0b67c7 55%,#1592df);box-shadow:0 12px 30px #093e8222}
+.car{font-size:50px}.hero h1{margin:7px 0;font-size:clamp(30px,7vw,52px);line-height:1.04;font-weight:950}
+.hero p{margin:9px 0;font-size:17px;font-weight:700}.hotline{display:inline-block;margin-top:10px;background:#ff5a2f;color:#fff;padding:12px 20px;border-radius:25px;font-size:18px;font-weight:900}
+.card{background:#fff;border-radius:23px;margin-top:16px;padding:19px;box-shadow:0 8px 28px #16304d1a}
+.section-title{margin:0 0 17px;color:#1465cf;font-size:29px;font-weight:950;text-align:center}
+.badge{text-align:center;color:#fff;background:#ff6b2c;border-radius:14px;padding:10px;font-weight:900;margin-bottom:18px}
+.field{margin-bottom:16px}label{display:block;font-size:17px;font-weight:850;margin-bottom:7px}
+input,select,textarea{width:100%;border:2px solid #dfe7ef;background:#fff;border-radius:17px;padding:13px;font-size:17px;color:#182338;outline:0}
+input:focus,select:focus,textarea:focus{border-color:#1976d2}textarea{min-height:125px;resize:vertical}
+.submit{width:100%;border:0;border-radius:24px;padding:17px;background:linear-gradient(135deg,#ff7b2f,#e95b20);color:#fff;font-size:19px;font-weight:950}
+.price-table{width:100%;border-collapse:collapse}.price-table th,.price-table td{padding:12px 9px;border-bottom:1px solid #e7edf3;text-align:left}
+.price-table th{background:#071b3d;color:#fff}.price-table td:last-child{font-weight:900;color:#e85d20}
+.note{background:#fff7df;border-left:5px solid #ffad2f;padding:13px;border-radius:10px;line-height:1.55;margin-top:15px}
+.route{background:#f3f8ff;border:1px solid #dceafa;padding:14px;border-radius:14px;margin:9px 0;line-height:1.5;font-weight:650}
+.bottom-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.bottom-actions a{text-align:center;padding:15px;border-radius:18px;font-weight:900;color:#fff}
+.call{background:#16863b}.book{background:#e85d20}.small{font-size:13px;color:#667085;text-align:center;line-height:1.5;margin-top:13px}
+@media(max-width:520px){.logo{font-size:16px}.nav-btn{padding:9px 10px;font-size:14px}.hero h1{font-size:34px}.card{padding:16px}.section-title{font-size:27px}}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="nav">
+<div class="logo">🚗 Xe ghép Hà Nội ↔ Tuyên Quang</div>
+<div class="nav-actions"><a class="nav-btn" href="tel:0392027827">📞 Gọi</a><a class="nav-btn" href="#datxe">📅 Đặt xe</a></div>
+</div>
+</header>
+
+<main class="wrap">
+<section class="hero">
+<div class="car">🚙</div>
+<h1>XE GHÉP<br>HÀ NỘI ↔ TUYÊN QUANG</h1>
+<p>❤️ ✴️ TỔNG ĐÀI XE GHÉP</p>
+<p>📲 Hotline – Zalo: <strong>0392.027.827</strong></p>
+<p>🆘 Xe ghép Hà Nội ↔ Tuyên Quang</p>
+<a class="hotline" href="tel:0392027827">📞 GỌI ĐẶT XE</a>
+</section>
+
+<section class="card" id="datxe">
+<h2 class="section-title">Đặt Xe Nhanh</h2>
+<div class="badge">🚗 XE GHÉP HÀ NỘI ↔ TUYÊN QUANG</div>
+<form id="bookingForm">
+<div class="field"><label>Họ và tên *</label><input id="name" required placeholder="Nhập họ và tên của bạn"></div>
+<div class="field"><label>Số điện thoại *</label><input id="phone" type="tel" required placeholder="Nhập số điện thoại"></div>
+<div class="field"><label>Số ghế / Loại xe *</label><select id="seat"><option>1 ghế</option><option>Bao xe 4 chỗ</option><option>Bao xe 7 chỗ</option></select></div>
+<div class="field"><label>Điểm đón *</label><select id="from" required><option value="">Chọn điểm đón</option><option>Hà Nội</option><option>Tuyên Quang</option><option>Sơn Dương</option><option>Sơn Nam</option><option>Vĩnh Yên</option><option>Đoan Hùng</option><option>IC9</option><option>Phù Ninh</option><option>Sân bay</option><option>Địa điểm khác...</option></select></div>
+<div class="field"><label>Điểm đến *</label><select id="to" required><option value="">Chọn điểm trả</option><option>Tuyên Quang</option><option>Hà Nội</option><option>Sơn Dương</option><option>Sơn Nam</option><option>Vĩnh Yên</option><option>Đoan Hùng</option><option>IC9</option><option>Phù Ninh</option><option>Sân bay</option><option>Địa điểm khác...</option></select></div>
+<div class="field"><label>Ngày đi *</label><input id="date" type="date" required></div>
+<div class="field"><label>Giờ đón *</label><input id="time" type="time" required></div>
+<div class="field"><label>Địa chỉ cụ thể & Ghi chú</label><textarea id="note" placeholder="Ví dụ: Đón tại thôn/xã nào, số nhà, hành lý mang theo..."></textarea></div>
+<button class="submit" type="submit">➤ &nbsp; ĐẶT XE NGAY</button>
+<p class="small">Tổng đài đặt xe: <strong>0392.027.827</strong></p>
+</form>
+</section>
+
+<section class="card">
+<h2 class="section-title">💰 Bảng giá</h2>
+<table class="price-table">
+<tr><th>Tuyến</th><th>Dịch vụ</th><th>Mức giá</th></tr>
+<tr><td>Tuyên Quang ↔ Hà Nội</td><td>1 ghế</td><td>300.000đ</td></tr>
+<tr><td>Tuyên Quang ↔ Hà Nội</td><td>Bao xe 4 chỗ</td><td>Từ 1.100.000đ</td></tr>
+<tr><td>Tuyên Quang ↔ Hà Nội</td><td>Bao xe 7 chỗ</td><td>Từ 1.600.000đ</td></tr>
+</table>
+<div class="note">📌 <strong>Lưu ý:</strong> Nếu điểm đón bạn cần chọn không có sẵn trong danh sách, hãy chọn “Địa điểm khác...” và ghi rõ địa chỉ bên dưới. Giá có thể thay đổi tùy điểm đón, trả thực tế.</div>
+</section>
+
+<section class="card">
+<h2 class="section-title">🗺️ Lộ trình</h2>
+<div class="route">1️⃣ Tuyên Quang → Sơn Dương → Sơn Nam → Vĩnh Yên → Sân bay → Hà Nội</div>
+<div class="route">2️⃣ Tuyên Quang → Đoan Hùng → IC9 → Phù Ninh → Sân bay → Hà Nội</div>
+</section>
+
+<div class="bottom-actions"><a class="call" href="tel:0392027827">📞 Gọi ngay</a><a class="book" href="#datxe">📅 Đặt xe ngay</a></div>
+</main>
+
+<script>
+const d=document.getElementById('date'), now=new Date();
+const today=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0")+"-"+String(now.getDate()).padStart(2,"0");
+d.min=today; d.value=today;
+document.getElementById('bookingForm').addEventListener('submit',async e=>{
+e.preventDefault();
+const msg=`🚗 YÊU CẦU ĐẶT XE
+Họ tên: ${name.value}
+SĐT: ${phone.value}
+Số ghế/Loại xe: ${seat.value}
+Điểm đón: ${from.value}
+Điểm đến: ${to.value}
+Ngày đi: ${date.value}
+Giờ đón: ${time.value}
+Địa chỉ/Ghi chú: ${note.value||"Không có"}
+📞 Tổng đài: 0392.027.827`;
+const zaloUrl="https://zalo.me/0392027827";
+try{await navigator.clipboard.writeText(msg);}catch(x){}
+window.location.href=zaloUrl;
+});
+</script>
+</body>
+</html>
